@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official ENJOY CREATOR ACADEMY Learning Portal for enrolled learners.">
+  <link rel="canonical" href="https://enjoycreatoracademy.in/portal.html">
+  <meta name="description" content="Official Enjoy Creator Academy Learning Portal for AI Video Creation Master Course students.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ECA Learning Portal | Enjoy Creator Academy">
+  <meta property="og:description" content="Access the Enjoy Creator Academy AI Video Creation Master Course learning portal.">
+  <meta property="og:image" content="assets/eca-logo.jpg">
+  <link rel="icon" href="assets/eca-logo.jpg" type="image/jpeg">
+  <meta name="description" content="ECA Learning Portal — Enjoy Creator Academy">
+  <title>ECA Learning Portal | Enjoy Creator Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root{--red:#ff3038;--red2:#ff5a5f;--bg:#070707;--panel:#101010;--line:rgba(255,255,255,.1);--muted:#999}
+    .portal-page{background:radial-gradient(circle at 50% -10%,rgba(255,45,50,.13),transparent 32%),#070707}
+    .portal-main{overflow:hidden}
+    .portal-hero{position:relative;padding:86px 0 74px;min-height:680px;display:flex;align-items:center}
+    .portal-hero:before,.portal-hero:after{content:"";position:absolute;pointer-events:none;border-radius:50%;filter:blur(1px)}
+    .portal-hero:before{width:540px;height:540px;right:-210px;top:80px;background:radial-gradient(circle,rgba(255,35,42,.16),transparent 68%)}
+    .portal-hero:after{width:380px;height:380px;left:-220px;bottom:-140px;background:radial-gradient(circle,rgba(255,35,42,.08),transparent 70%)}
+    .portal-hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;position:relative;z-index:1}
+    .portal-badge{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(255,72,78,.32);border-radius:999px;background:rgba(255,45,50,.07);color:#ff6267;font-size:.68rem;font-weight:900;letter-spacing:.16em;box-shadow:0 0 30px rgba(255,35,42,.08)}
+    .portal-badge i{width:7px;height:7px;border-radius:50%;background:#ff3c43;box-shadow:0 0 12px #ff3c43;animation:portalPulse 1.8s infinite}
+    @keyframes portalPulse{50%{opacity:.35;transform:scale(.65)}100%{opacity:1;transform:scale(1)}}
+    .portal-copy h1{font-size:clamp(2.8rem,5.4vw,5.4rem);line-height:.96;letter-spacing:-.065em;margin:22px 0 22px;max-width:780px}
+    .portal-copy h1 em{font-style:normal;background:linear-gradient(100deg,#fff 10%,#ff444a 72%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .portal-copy>p{max-width:650px;color:#aaa;font-size:1.08rem;line-height:1.8;margin:0 0 30px}
+    .portal-trust{display:flex;flex-wrap:wrap;gap:11px}.portal-trust span{padding:10px 13px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025);font-size:.78rem;color:#d8d8d8}.portal-trust b{color:#ff5258}
+    .portal-access-card{position:relative;padding:30px;border:1px solid rgba(255,255,255,.12);border-radius:30px;background:linear-gradient(145deg,rgba(25,25,25,.95),rgba(9,9,9,.98));box-shadow:0 35px 100px rgba(0,0,0,.55),inset 0 1px rgba(255,255,255,.06);overflow:hidden}
+    .portal-access-card:before{content:"";position:absolute;width:260px;height:260px;right:-130px;top:-130px;background:radial-gradient(circle,rgba(255,45,52,.2),transparent 68%);pointer-events:none}
+    .portal-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.portal-card-brand{display:flex;align-items:center;gap:10px;color:#eee;font-weight:800;font-size:.75rem;letter-spacing:.08em}.portal-card-brand img{width:34px;height:34px;object-fit:cover;border-radius:10px}.portal-live{font-size:.62rem;font-weight:900;letter-spacing:.12em;color:#ff6267;border:1px solid rgba(255,75,80,.3);padding:7px 9px;border-radius:999px}
+    .portal-access-card h2{font-size:clamp(1.55rem,3vw,2.15rem);letter-spacing:-.04em;margin:0 0 10px}.portal-access-card>p{color:#999;line-height:1.65;margin:0 0 22px;font-size:.9rem}
+    .portal-access-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 24px}.portal-access-points span{padding:11px 12px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.065);font-size:.75rem;color:#d2d2d2}.portal-access-points span::first-letter{color:#ff444a}
+    .portal-login-btn,.portal-enroll-btn{display:flex;justify-content:center;align-items:center;min-height:52px;border-radius:14px}.portal-buy-note{margin:20px 0 13px;padding:14px 15px;border-left:3px solid var(--red);border-radius:10px;background:rgba(255,40,45,.055);color:#aaa;line-height:1.55;font-size:.8rem}.portal-buy-note strong{color:#f3f3f3}
+    .portal-offer{padding:17px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:#0c0c0c;margin-bottom:12px}.portal-offer-label{display:block;color:#ff555b;font-size:.62rem;font-weight:900;letter-spacing:.16em;margin-bottom:5px}.portal-price-row{display:flex;align-items:baseline;gap:11px}.portal-price{font-size:2.35rem;font-weight:950;letter-spacing:-.06em}.portal-old-price{color:#777;text-decoration:line-through;font-size:.95rem;font-weight:700}.portal-offer-sub{display:block;color:#777;font-size:.68rem;margin-top:4px}.portal-enroll-btn{margin-top:0}
+    .portal-mini-note{text-align:center;color:#666;font-size:.65rem;margin:12px 0 0!important}
+    .portal-roadmap-section{position:relative;padding-top:92px;padding-bottom:90px}.portal-roadmap-section:before{content:"";position:absolute;left:50%;top:0;width:850px;height:650px;transform:translateX(-50%);background:radial-gradient(circle,rgba(255,35,42,.09),transparent 65%);pointer-events:none}
+    .portal-section-head{position:relative;z-index:1;display:grid;grid-template-columns:1fr .72fr;gap:40px;align-items:end;margin-bottom:34px}.portal-kicker{color:#ff4f55;font-size:.66rem;font-weight:900;letter-spacing:.2em}.portal-section-head h2{font-size:clamp(2rem,4vw,3.7rem);line-height:1;letter-spacing:-.055em;margin:10px 0 0}.portal-section-head h2 em{font-style:normal;color:#ff454b}.portal-section-head>p{color:#929292;line-height:1.75;margin:0}
+    .roadmap-intro{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.roadmap-intro>div{padding:18px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.025)}.roadmap-intro span{color:#ff4d53;font-size:.62rem;font-weight:900;letter-spacing:.15em}.roadmap-intro strong{display:block;margin-top:10px;font-size:.8rem;letter-spacing:.06em}.roadmap-intro small{display:block;color:#777;line-height:1.45;margin-top:5px;font-size:.7rem}
+    .portal-roadmap-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.roadmap-card{display:flex;gap:17px;align-items:flex-start;padding:20px;border:1px solid rgba(255,255,255,.085);border-radius:19px;background:linear-gradient(145deg,rgba(255,255,255,.04),rgba(255,255,255,.015));transition:.35s ease;position:relative;overflow:hidden}.roadmap-card:after{content:"";position:absolute;left:0;top:0;width:2px;height:100%;background:linear-gradient(#ff3d44,transparent);opacity:.5}.roadmap-card:hover{transform:translateY(-4px);border-color:rgba(255,60,66,.4);box-shadow:0 18px 50px rgba(0,0,0,.28)}.roadmap-card>span{flex:0 0 43px;width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#151515;border:1px solid rgba(255,75,80,.25);color:#ff555b;font-weight:900;font-size:.78rem}.roadmap-card small{color:#777;font-size:.57rem;letter-spacing:.16em;font-weight:900}.roadmap-card h3{font-size:.94rem;margin:5px 0 6px}.roadmap-card p{margin:0;color:#858585;line-height:1.5;font-size:.75rem}
+    .portal-roadmap-footer{position:relative;z-index:1;margin-top:20px;padding:24px;border-radius:21px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(100deg,rgba(255,40,45,.08),rgba(255,255,255,.025));display:flex;align-items:center;justify-content:space-between;gap:24px}.portal-roadmap-footer h3{margin:5px 0 5px;font-size:1.15rem}.portal-roadmap-footer p{margin:0;color:#858585;font-size:.78rem}.portal-roadmap-footer .btn{white-space:nowrap}
+    @media(max-width:900px){.portal-hero{padding:65px 0}.portal-hero-grid{grid-template-columns:1fr;gap:34px}.portal-section-head{grid-template-columns:1fr}.roadmap-intro{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.portal-hero{padding:48px 0 55px;min-height:auto}.portal-copy h1{font-size:2.65rem}.portal-copy>p{font-size:.92rem;line-height:1.65}.portal-access-card{padding:21px;border-radius:23px}.portal-access-points{grid-template-columns:1fr}.portal-trust{gap:7px}.portal-trust span{font-size:.68rem;padding:8px 10px}.portal-roadmap-section{padding-top:62px;padding-bottom:65px}.roadmap-intro,.portal-roadmap-grid{grid-template-columns:1fr}.portal-roadmap-footer{flex-direction:column;align-items:flex-start}.portal-roadmap-footer .btn{width:100%;justify-content:center}.portal-price{font-size:2.1rem}}
+  </style>
+</head>
+<body class="portal-page">
+  <div class="noise"></div>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img loading="lazy" decoding="async" src="assets/eca-logo.jpg" alt="ECA logo"><span><strong>ENJOY</strong><small>CREATOR ACADEMY</small></span></a><nav class="main-nav static-nav"><a href="index.html">← HOME</a><a href="course.html">MASTER COURSE</a><a class="nav-login" href="portal.html">ECA LEARNING PORTAL ↗</a></nav></div></header>
+  <main class="portal-main">
+    <section class="portal-hero">
+      <div class="container portal-hero-grid">
+        <div class="portal-copy reveal">
+          <span class="portal-badge"><i></i> OFFICIAL ECA LEARNING PORTAL</span>
+          <h1>Welcome To<br><em>ENJOY CREATOR ACADEMY</em></h1>
+          <p>Your dedicated learning space for practical AI education. Access your course, continue learning, and build real creator skills through a structured AI learning experience.</p>
+          <div class="portal-trust">
+            <span><b>✓</b> Lifetime Access</span><span><b>✓</b> Free Updates</span><span><b>✓</b> Community Support</span><span><b>✓</b> Practical Learning</span>
+          </div>
+        </div>
+
+        <div class="login-card portal-access-card reveal">
+          <div class="portal-card-top"><div class="portal-card-brand"><img loading="lazy" decoding="async" src="assets/eca-logo.jpg" alt="ECA logo"> ECA LEARNING</div><span class="portal-live">STUDENT ACCESS</span></div>
+          <h2>Your Learning Starts Here.</h2>
+          <p>Already enrolled in the academy? Enter your learning space by opening your official course folder.</p>
+          <div class="portal-access-points">
+            <span>✓ AI Video Creation Master Course</span><span>✓ Lifetime Course Access</span><span>✓ Lifetime Free Updates</span><span>✓ Community Support</span>
+          </div>
+          <a class="btn btn-primary full portal-login-btn" href="https://drive.google.com/drive/folders/1mTcOr9r5IKXvQq97HyAf4x8wze__XMit" target="_blank" rel="noopener">LOGIN TO PORTAL →</a>
+          <p class="portal-buy-note"><strong>Haven’t enrolled yet?</strong> Hurry! Only limited seats are available for the ₹999 offer.</p>
+          <div class="portal-offer"><span class="portal-offer-label">SPECIAL ENROLLMENT OFFER</span><div class="portal-price-row"><span class="portal-price">₹999/-</span><span class="portal-old-price">₹10,999</span></div><span class="portal-offer-sub">Get lifetime access to the AI Video Creation Master Course.</span></div>
+          <a class="btn btn-primary full portal-enroll-btn" href="https://rzp.io/rzp/KGXR4D3" target="_blank" rel="noopener">ENROLL NOW →</a>
+          <p class="portal-mini-note">Secure enrollment • Lifetime access • Monthly updates</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portal-roadmap-section">
+      <div class="container">
+        <div class="portal-section-head reveal">
+          <div><span class="portal-kicker">LEARNING ROADMAP</span><h2>AI Video Creation <em>Master Course</em></h2></div>
+          <p>A structured 14-lesson creator journey — from AI fundamentals and prompting to cinematic videos, ads, voice, music and editing.</p>
+        </div>
+        <div class="roadmap-intro reveal">
+          <div><span>01 / FOUNDATION</span><strong>UNDERSTAND</strong><small>AI, tools & prompt fundamentals</small></div>
+          <div><span>02 / CREATION</span><strong>BUILD</strong><small>Images, avatars & AI videos</small></div>
+          <div><span>03 / PRODUCTION</span><strong>PRODUCE</strong><small>Stories, ads & cinematic projects</small></div>
+          <div><span>04 / FINISHING</span><strong>EDIT & CREATE</strong><small>Voice, music, editing & Gamma AI</small></div>
+        </div>
+        <div class="portal-roadmap-grid">
+          <article class="roadmap-card reveal"><span>01</span><div><small>FOUNDATION</small><h3>What Is AI Video Creation?</h3><p>Understand the fundamentals and possibilities of AI-powered video creation.</p></div></article>
+          <article class="roadmap-card reveal"><span>02</span><div><small>TOOLS</small><h3>Free AI Tools For AI Video Creation</h3><p>Explore useful tools for building a practical AI creator workflow.</p></div></article>
+          <article class="roadmap-card reveal"><span>03</span><div><small>PROMPTING</small><h3>Prompt Engineering Basics</h3><p>Learn how to write effective prompts for stronger creative outputs.</p></div></article>
+          <article class="roadmap-card reveal"><span>04</span><div><small>IMAGES</small><h3>How To Create AI Images?</h3><p>Create visual assets that can become the foundation of your videos.</p></div></article>
+          <article class="roadmap-card reveal"><span>05</span><div><small>CANVA AI</small><h3>Canva AI Tutorial</h3><p>Use Canva AI to design and prepare creator-ready visual content.</p></div></article>
+          <article class="roadmap-card reveal"><span>06</span><div><small>ANIMATION</small><h3>AI Image To Video Conversion</h3><p>Turn still AI images into engaging moving video sequences.</p></div></article>
+          <article class="roadmap-card reveal"><span>07</span><div><small>AVATARS</small><h3>How To Create AI Avatar?</h3><p>Learn the workflow for creating AI avatar-based content.</p></div></article>
+          <article class="roadmap-card reveal"><span>08</span><div><small>VIDEO</small><h3>How To Create AI Videos?</h3><p>Bring your visual assets together into complete AI video creations.</p></div></article>
+          <article class="roadmap-card reveal"><span>09</span><div><small>STORYTELLING</small><h3>How To Create AI Story Videos?</h3><p>Build structured story videos with scenes, visuals and narration.</p></div></article>
+          <article class="roadmap-card reveal"><span>10</span><div><small>ADVERTISING</small><h3>How To Create AI Ad Videos?</h3><p>Create promotional videos for brands, products and campaigns.</p></div></article>
+          <article class="roadmap-card reveal"><span>11</span><div><small>VOICE</small><h3>AI Voiceover Creation</h3><p>Create voiceovers that complement your AI video projects.</p></div></article>
+          <article class="roadmap-card reveal"><span>12</span><div><small>MUSIC</small><h3>AI Song Creation</h3><p>Explore AI-assisted music and song creation for your content.</p></div></article>
+          <article class="roadmap-card reveal"><span>13</span><div><small>PRESENTATION</small><h3>Gamma AI Tutorial</h3><p>Use Gamma AI to create polished visual presentations and assets.</p></div></article>
+          <article class="roadmap-card reveal"><span>14</span><div><small>EDITING</small><h3>InShot Video Editing</h3><p>Edit, arrange and polish your final videos for publishing.</p></div></article>
+        </div>
+        <div class="portal-roadmap-footer reveal">
+          <article class="roadmap-card reveal"><span class="upcoming-badge">UPCOMING</span><div><small>CINEMA</small><h3>How To Create AI Movies?</h3><p>Explore cinematic AI workflows for longer-form visual storytelling.</p></div></article>
+          <div><span class="portal-kicker">CONTINUOUS LEARNING</span><h3>Monthly Syllabus Updates</h3><p>New AI tools, creator workflows and practical lessons will keep the roadmap growing.</p></div>
+          <a class="btn btn-primary" href="https://rzp.io/rzp/KGXR4D3" target="_blank" rel="noopener">ENROLL NOW →</a>
+        </div>
+      </div>
+    </section>
+    <section class="section contact">
+      <div class="container contact-card reveal">
+        <div><span class="kicker">CONTACT</span><h2>Need help with your <em>learning?</em></h2><p>For course questions, enrollment support or any assistance with the ECA Learning Portal, reach out directly.</p></div>
+        <div class="contact-actions">
+          <a href="https://wa.me/916381046840" target="_blank" rel="noopener"><small>WHATSAPP ONLY</small><strong>+91 6381046840</strong></a>
+          <a href="mailto:work.enjoycreatoracademy@gmail.com"><small>EMAIL</small><strong>work.enjoycreatoracademy@gmail.com</strong></a>
+          <a class="btn btn-primary" href="https://rzp.io/rzp/KGXR4D3" target="_blank" rel="noopener">ENROLL FOR ₹999 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container copyright">©2026 Enjoy Creator Academy. All Rights Reserved. · <a href="legal.html#privacy">Privacy</a> · <a href="legal.html#terms">Terms</a> · <a href="legal.html#refund">Refund</a></div></footer>
+  <div class="mobile-sticky-cta"><a href="https://drive.google.com/drive/folders/1mTcOr9r5IKXvQq97HyAf4x8wze__XMit" target="_blank" rel="noopener">LOGIN TO PORTAL <span>↗</span></a></div>
+  <script src="script.js"></script>
+</body>
+</html>
